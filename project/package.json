@@ -1,51 +1,47 @@
 {
-  "name": "gatsby-starter-cv",
-  "private": true,
-  "description": "A simple starter to get up and developing your digital curriculum with GatsbyJS",
-  "version": "0.0.1",
-  "author": "Francisco Santos <yoshi.df@gmail.com>",
-  "dependencies": {
-    "babel-plugin-styled-components": "1.10.0",
-    "gatsby": "2.4.2",
-    "gatsby-image": "2.0.41",
-    "gatsby-plugin-google-analytics": "2.0.19",
-    "gatsby-plugin-manifest": "2.1.1",
-    "gatsby-plugin-offline": "2.1.0",
-    "gatsby-plugin-react-helmet": "3.0.12",
-    "gatsby-plugin-sharp": "2.0.36",
-    "gatsby-plugin-styled-components": "3.0.7",
-    "gatsby-source-filesystem": "2.0.33",
-    "gatsby-transformer-sharp": "2.1.19",
-    "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-awesome-styled-grid": "2.2.3",
-    "react-dom": "16.8.6",
-    "react-helmet": "5.2.1",
-    "react-icons": "3.6.1",
-    "simple-json-fetch": "1.0.1",
-    "styled-components": "4.2.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "devDependencies": {
-    "gh-pages": "2.0.1",
-    "prettier": "1.17.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv"
-  },
-  "bugs": {
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv/issues"
-  }
+    "name": "gatsby-starter-internationalized",
+    "description": "A starter for websites with internationalized content and routes",
+    "version": "0.0.1",
+    "author": "Marek Janča <marek-janca@volny.cz>",
+    "dependencies": {
+        "gatsby": "^2.1.24",
+        "gatsby-image": "^2.0.31",
+        "gatsby-plugin-manifest": "^2.0.22",
+        "gatsby-plugin-offline": "^2.0.24",
+        "gatsby-plugin-react-helmet": "^3.0.8",
+        "gatsby-plugin-sass": "^2.0.11",
+        "gatsby-plugin-sharp": "^2.0.25",
+        "gatsby-source-filesystem": "^2.0.23",
+        "gatsby-transformer-sharp": "^2.1.15",
+        "node-sass": "^4.12.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "react-helmet": "^5.2.1",
+        "react-intl": "^2.8.0",
+        "recompose": "^0.30.0"
+    },
+    "keywords": [
+        "gatsby",
+        "gatsby-starter",
+        "intl"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "start": "npm run develop",
+        "serve": "gatsby serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AckeeCZ/gatsby-starter-internationalized"
+    },
+    "bugs": {
+        "url": "https://github.com/AckeeCZ/gatsby-starter-internationalized/issues"
+    },
+    "devDependencies": {
+        "babel-preset-gatsby": "^0.1.8",
+        "identity-obj-proxy": "^3.0.0"
+    }
 }

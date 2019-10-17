@@ -1,158 +1,137 @@
-[![Build Status](https://travis-ci.org/santosfrancisco/gatsby-starter-cv.svg?branch=master)](https://travis-ci.org/santosfrancisco/gatsby-starter-cv)
-[![GitHub version](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv.svg)](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby's CV starter
-</h1>
 
-Create your resume in a few minutes with this totally responsive starter using React. Show off your skills, work experiences and activities in github.
+# Gatsby Starter Internationalized
 
+Gatsby v2 starter based on [gatsby-starter-intl](https://github.com/tomekskuta/gatsby-starter-intl).
 
-## 📷 Preview
+[Checkout the demo!](https://gatsby-starter-internationalized.ack.ee)
 
-![Preview](./preview.png)
+## Features
 
-## 🚀 Quick start
+-   **internationalized page content** - via `react-intl`
+-   **internationalized routes** - via language configuration
+-   **lightweight** - includes only internationalization code
 
-1.  **Create a Gatsby site.**
+-   `LocalizedLink` - built-in link component handling route generation
+-   `LanguageSwitcher` - built-in language switcher component
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+**The starter includes only code important for internationalization, the rest is up to you**
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter https://github.com/santosfrancisco/gatsby-starter-cv
-    ```
+## How to start
 
-1.  **Start developing.**
+To use **Gatsby** you have to install Gatsby CLI
 
-    Navigate into your new site’s directory and start it up.
+```sh
+npm install global gatsby-cli
+```
 
-    ```sh
-    cd my-default-starter/
-    npm run develop
-    ```
+Then use it to start new project based on **gatsby-starter-internationalized**
 
-1.  **Open the source code and start editing!**
+```sh
+gatsby new your-project-name https://github.com/AckeeCZ/gatsby-starter-internationalized
+cd your-project-name/
+gatsby develop
+```
 
-    Your site is now running at `http://localhost:8000`!
+Your site is running at `localhost:8000`.
 
-    \_Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).\_
+If you want to compile production build just run `gatsby build`.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## How it works
 
-1. **Generate production build**
+Gatsby creates **static pages** for every language sets in the configuration in [src/i18n/config/languages.js](src/i18n/config/languages.js).
 
-  That command will generate a production build on _public_ folder
-  ```sh
-    npm run build
-  ```
+Say you have two languages:
 
-## Configuration
+-   `cs` ,
+-   `en` and is a default language,
 
-Update the configuration file with your data. The configuration file is in ```data/siteConfig.js```
+Gatsby then creates:
 
-:warning: NOTE: Please change googleAnalyticsId to your ID.  See https://analytics.google.com for details.
+-   `/cs/stranka1`,
+-   `/page1`, 
 
-> **Skills** is a set of your personal skills and their respective levels ranging from > 0 to 100.
-> **jobs** is a set of your work experiences
+names depend on your configuration.
+
+### Translations
+
+Translations are set in [src/i18n/translations](src/i18n/translations). We use flat structure set in yaml files. There should be a yaml file for every language (`cs.yaml`, `en.yaml` etc.)
+
+```jsx
+<FormattedMessage id="home.title" />
+```
+
+Translation is in `src/i18n/translations/en.yaml` and looks like:
+
+```yaml
+home.title: "Homepage"
+```
+
+### Languages
+
+Language list is in [src/i18n/config/languages.js](src/i18n/config/languages.js). Elements of array have following attributes:
+
+-   locale - a key to identify your locale,
+-   label - a locale name,
+-   default - a flag if the language is default (routes won't be prepend with locale),
+-   routes - an object with translations for app routes,
+
+Example:
 
 ```js
-module.exports = {
-  siteTitle: 'Francisco Santos',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-  In 2012 I started working as a support technician and I approached the developers.
-  In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-  I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
-  skills: [
-    {
-      name: 'HTML',
-      level: 70
+{
+        locale: "cs",
+        label: "Čeština",
+        routes: {
+            "/": "/",
+            "/page1": "/stranka1",
+            "/subpage/page1": "/podstranka/stranka1",
+        }
     },
     {
-      name: 'CSS',
-      level: 60
+        locale: "en",
+        label: "English",
+        default: true,
+        routes: {
+            "/": "/",
+            "/page1": "/page1",
+            "/subpage/page1": "/subpage/page1",
+        }
     },
-    {
-      name: 'Javascript',
-      level: 50
-    },
-    {
-      name: 'NodeJs',
-      level: 40
-    },
-    {
-      name: 'React',
-      level: 60
-    },### 
-    {
-      name: 'Git',
-      level: 70
-    }
-  ],
-  jobs: [
-    {
-      company: "Lendico",
-      begin: {
-        month: 'apr',
-        year: '2018'
-      },
-      duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-  
-    }, {
-      company: "Anapro",
-      begin: {
-        month: 'dec',
-        year: '2016'
-      },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
-    }, {
-      company: "Anapro",
-      begin: {
-        month: 'set',
-        year: '2012'
-      },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
-    },
-    /* ... */
-  ],
-  social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
-  },
-  siteUrl: 'https://santosfrancisco.github.io/gatsby-starter-cv',
-  pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
-  background_color: '#ffffff',
-  theme_color: '#25303B',
-  display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
-  headerLinks: [
-    {
-      label: 'Francisco Santos',
-      url: '/',
-    }
-  ]
-}
-
 ```
+
+### React Intl locales
+Don't forget to add `react-intl` locales for your languages in [src/i18n/config/reactIntl.js](src/i18n/config/reactIntl.js).
+
+### PageContext
+`PageContext` includes `locale` and `originalPath` you can use in your pages. It is used by `LocalizedLink` to create correct link and by `LanguageSwitcher` to switch to correct language version of a page.
+
+`withPageContext` wraps your page with `react-intl` provider and our own `PageContext` provider.
+
+```jsx
+// src/pages/my-page.jsx
+
+import withPageContext from "../pageContext";
+
+const IndexPage = ({ intl }) => (
+    <React.Fragment>
+        <h1>
+            <FormattedMessage id="home.title" />
+        </h1>
+    </React.Fragment>
+);
+
+export default withPageContext(IndexPage);
+```
+
+## Contributing
+
+If you have any question, see bugs or you think some feature can be written better - just open pull request or issue. I will be happy to help and learn from you.
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)

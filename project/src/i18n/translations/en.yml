@@ -1,0 +1,4 @@
+home.title: "Homepage"
+home.main: 'Home'
+footer.title: '© 2019, Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>'
+back.home: "Back to homepage"
