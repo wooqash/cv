@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 import { getDisplayName } from "../utils";
 
-import "../styles/common.sass";
+import "../styles/common.scss";
 
 const withLayout = Component => {
     const WrapperComponent = props => {
