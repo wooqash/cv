@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+$avatarSize: 100rem;
+
+.hero {
+    text-align: center;
+    &__title {
+        display: inline-block;
+        padding: 10rem 40rem;
+        margin: 20rem;
+        border: 1px solid $border-color;
+        font-size: 30rem;
+        text-transform: uppercase;
+        letter-spacing: 4rem;
+    }
+    &__subtitle {
+        font-size: 14rem;
+        text-transform: uppercase;
+        letter-spacing: 4rem;
+        margin: 10rem;
+    }
+    &__avatar {
+        width: $avatarSize;
+        height: $avatarSize;
+        margin: $avatarSize / 5;
+        border: $avatarSize / 10 solid $border-color;
+        border-radius: $avatarSize;
+    }
+}
+
+.social {
+    margin: 10rem auto;
+    &__link {
+        padding: 8px;
+        &.twitter:hover {
+            color: $twitter-color;
+        }
+        &.github:hover {
+        color: $github-color;
+        }
+        &.linkedin:hover {
+        color: $linkedin-color;
+        }
+        &.email:hover {
+        color: $gmail-color;
+        }
+    }
+  }
+
+
+
+
