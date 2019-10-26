@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.contact-info,
+.social {
+    margin: 10rem auto;
+    &__link {
+        display: inline-block;
+        margin: 5rem 0;
+        vertical-align: middle;
+    }
+    &__icon{
+        margin-right: 10rem;
+        vertical-align: middle;
+    }
+}
+
+.contact-info {
+    &__link {
+        &.address:hover {
+            color: $address-color;
+        }
+        &.phone:hover {
+            color: $phone-color;
+        }
+        &.email:hover {
+            color: $gmail-color;
+        }
+        &.site.zibeline:hover {
+            color: $site-zibeline;
+        }
+    }
+}
+
+.social {
+    &__link {
+        &.twitter:hover {
+            color: $twitter-color;
+        }
+        &.github:hover {
+            color: $github-color;
+        }
+        &.linkedin:hover {
+            color: $linkedin-color;
+        }
+    }
+}
