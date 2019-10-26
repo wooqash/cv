@@ -1,5 +1,189 @@
 {
     "home.title": "Homepage",
     "home.main": "home",
-    "footer.title": "© 2019, Built with Gatsby"
+    "footer.title": "© 2019, Built with Gatsby",
+    "experience": {
+        "title": "experience",
+        "employments": [
+            {
+                "company": "Prime Force",
+                "date": "02/2019 - currently",
+                "position": "Angular Developer",
+                "responsibilities": "I'm responsible for building and development of existing angular components at an internal BMW system for document management. Besides I'm also preparing End-To-End tests (E2E)"
+            },
+            {
+                "company": "Hypermedia/Isobar",
+                "date": "10-2012 - 02-2019",
+                "position": "Senior Frontend Developer",
+                "responsibilities": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lacus in ligula tempus rhoncus non sed metus. Morbi nisi quam, finibus et mauris id, porttitor faucibus orci. Donec ac elementum est. Cras tempus ultricies nibh, eget elementum dui porta ut. Cras eu magna leo. Donec in nunc ac ante tincidunt ultrices a vel sem. Nulla fermentum dui vel nulla commodo bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam consequat non nibh at faucibus. Nulla suscipit pulvinar neque quis volutpat."
+            },
+            {
+                "company": "Makolab",
+                "date": "10-2010 - 10-2012",
+                "position": "Senior Frontend Developer",
+                "responsibilities": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lacus in ligula tempus rhoncus non sed metus. Morbi nisi quam, finibus et mauris id, porttitor faucibus orci. Donec ac elementum est. Cras tempus ultricies nibh, eget elementum dui porta ut. Cras eu magna leo."
+            }
+        ]
+    },
+    "education": {
+        "title": "education",
+        "schools": [
+            {
+                "name": "University of Lodz - Faculty of Management",
+                "date": "2004 - 2009",
+                "field": "Management and Marketing",
+                "spec": "Information Technology in Management"
+            }
+        ]
+    },
+    "about": {
+        "title": "job profile",
+        "desc": "From 2012 I working as front-end developer. During this period I was involved over a dozen or even more commercial projects. I create a visual layer of websites based on graphic projects. At this moment I'm focused on improving my JavaScript skills and I'm interested in this type of projects."
+    },
+    "skills": {
+        "title": "skills",
+        "skills": [
+            {
+                "name": "technologies",
+                "items": [
+                    {
+                        "name": "html5",
+                        "marked": true
+                    },
+                    {
+                        "name": "css3",
+                        "marked": true
+                    },
+                    {
+                        "name": "sass",
+                        "marked": true
+                    },
+                    {
+                        "name": "less",
+                        "marked": false
+                    },
+                    {
+                        "name": "javascript",
+                        "marked": true
+                    },
+                    {
+                        "name": "es6",
+                        "marked": false
+                    },
+                    {
+                        "name": "typescript",
+                        "marked": false
+                    },
+                    {
+                        "name": "php",
+                        "marked": false
+                    },
+                    {
+                        "name": ".net",
+                        "marked": false
+                    },
+                    {
+                        "name": "rest api",
+                        "marked": false
+                    }
+                ]
+            },
+            {
+                "name": "libs & frameworks",
+                "items": [
+                    {
+                        "name": "angular",
+                        "marked": false
+                    },
+                    {
+                        "name": "react",
+                        "marked": false
+                    },
+                    {
+                        "name": "jquery",
+                        "marked": true
+                    },
+                    {
+                        "name": "bootstrap",
+                        "marked": true
+                    },
+                    {
+                        "name": "foundation",
+                        "marked": false
+                    },
+                    {
+                        "name": "handlebars",
+                        "marked": false
+                    }
+                ]
+            },
+            {
+                "name": "tools",
+                "items": [
+                    {
+                        "name": "vscode",
+                        "marked": true
+                    },
+                    {
+                        "name": "photoshop",
+                        "marked": true
+                    },
+                    {
+                        "name": "gulp",
+                        "marked": true
+                    },
+                    {
+                        "name": "parcel",
+                        "marked": true
+                    },
+                    {
+                        "name": "webpack",
+                        "marked": false
+                    },
+                    {
+                        "name": "git",
+                        "marked": true
+                    },
+                    {
+                        "name": "svn",
+                        "marked": false
+                    },
+                    {
+                        "name": "jira",
+                        "marked": true
+                    },
+                    {
+                        "name": "trello",
+                        "marked": true
+                    },
+                    {
+                        "name": "redmine",
+                        "marked": false
+                    },
+                    {
+                        "name": "wordpress",
+                        "marked": false
+                    }
+                ]
+            },
+            {
+                "name": "other",
+                "items": [
+                    {
+                        "name": "rwd",
+                        "marked": true
+                    },
+                    {
+                        "name": "bem methodology",
+                        "marked": true
+                    },
+                    {
+                        "name": "web accessibility",
+                        "marked": false
+                    }
+                ]
+            }
+        ]
+    },
+    "contact.title": "contact"
 }

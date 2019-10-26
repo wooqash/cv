@@ -25,6 +25,8 @@ const IndexPage = (props) => {
     const title = siteConfig.siteTitle;
     const { keywords } = siteConfig;
     const { locale } = props.pageContext;
+    const { ...translations } = props.intl.messages;
+    console.log(translations);
     return (
         <React.Fragment>
             <SEO title={title} keywords={keywords} lang={locale}  />
@@ -37,13 +39,13 @@ const IndexPage = (props) => {
                     </Row>
                     <Row>
                         <Col xs={4} md={4} className="column column--left">
-                            <Experience></Experience>
-                            <About></About>
+                            <Experience title={translations.experience.title} employments={translations.experience.employments}></Experience>
+                            <Education title={translations.education.title} schools={translations.education.schools}></Education>
                         </Col>
                         <Col xs={4} md={4} className="column column--rigth">
-                            <Education></Education>
-                            <Skills></Skills>
-                            <Contact></Contact>
+                            <About title={translations.about.title} desc={translations.about.desc}></About>
+                            <Skills title={translations.skills.title} skills={translations.skills.skills}></Skills>
+                            <Contact title={translations["contact.title"]}></Contact>
                         </Col>
                     </Row>
                 </Container>
