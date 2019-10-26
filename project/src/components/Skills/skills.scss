@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.skill-group {
+    &-name {
+        margin-bottom: 5rem;
+        font-size: 14rem;
+        text-transform: uppercase;
+    }
+    &-list {
+        margin-bottom: 15rem;
+        &__item {
+            display: inline-block;
+            margin-right: 5rem;
+            font-size: 14rem;
+            &--marked {
+                font-weight: 700;
+                font-size: 16rem;
+            }
+        }
+    }
+}
