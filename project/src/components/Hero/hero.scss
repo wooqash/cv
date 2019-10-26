@@ -28,25 +28,6 @@ $avatarSize: 100rem;
     }
 }
 
-.social {
-    margin: 10rem auto;
-    &__link {
-        padding: 8px;
-        &.twitter:hover {
-            color: $twitter-color;
-        }
-        &.github:hover {
-        color: $github-color;
-        }
-        &.linkedin:hover {
-        color: $linkedin-color;
-        }
-        &.email:hover {
-        color: $gmail-color;
-        }
-    }
-  }
-
 
 
 
