@@ -3,10 +3,8 @@ module.exports = {
     siteDescription: `Create your online curriculum in just a few minutes with this starter`,
     keywords: ['gatsbyjs', 'react', 'curriculum'],
     googleFontsUrl: "https://fonts.googleapis.com/css?family=Hind:400,500,700|Open+Sans:400,700&display=swap&subset=latin-ext",
-    authorName: 'Francisco Santos',
+    authorName: 'Łukasz Sobola',
     authorPosition: 'Frontend developer',
-    twitterUsername: '_franciscodf',
-    githubUsername: 'santosfrancisco',
     googleAnalyticsId: 'UA-000000000-1',
     dateOfBirth: "17-01-1984",
     contact: {

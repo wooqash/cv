@@ -1,7 +1,7 @@
 import React from "react";
 import siteConfig from "../../../data/config";
 
-import authorAvatar from "../../images/gatsby-astronaut.png";
+import authorAvatar from "../../images/lukasz_sobola.jpg";
 
 import "./hero.scss";
 

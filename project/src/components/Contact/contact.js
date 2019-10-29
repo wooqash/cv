@@ -8,14 +8,6 @@ const Contact = (props) => (
     <section className="section contact">
         <h3 className="section__title">{props.title}</h3>
         <ul className="contact-info">
-            {siteConfig.contact.address &&
-                <li>
-                    <a className="contact-info__link address" href={siteConfig.contact.addressLink} target="_blank">
-                        <FaMapMarkerAlt className="contact-info__icon" size="16" />
-                        {siteConfig.contact.address}
-                    </a>
-                </li>
-            }
             {siteConfig.contact.phoneNo &&
                 <li>
                     <a className="contact-info__link phone" href={`tel:${siteConfig.contact.phoneNo}`}>
@@ -45,6 +37,14 @@ const Contact = (props) => (
                     <a className="contact-info__link site zibeline" href={siteConfig.contact.site2Link}>
                         <FaGlobe className="contact-info__icon" size="16" />
                         {siteConfig.contact.site2}
+                    </a>
+                </li>
+            }
+            {siteConfig.contact.address &&
+                <li>
+                    <a className="contact-info__link address" href={siteConfig.contact.addressLink} target="_blank">
+                        <FaMapMarkerAlt className="contact-info__icon" size="16" />
+                        {siteConfig.contact.address}
                     </a>
                 </li>
             }
