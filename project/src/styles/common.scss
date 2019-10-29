@@ -22,39 +22,89 @@ a {
     }
 }
 
-main {
-    width: 80%;
-    max-width: 960px;
-    min-height: 150px;
-    padding: 50rem; //50px;
-    margin: 0px auto 30rem auto;
-    border-radius: 3px;
-    box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word;
-    background-color: #fff;
+.page-wrapper{
+    position: relative;
+    overflow: hidden;
+}
 
-    @media (max-width: 48.75rem) { //780px
+main {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 980rem;
+    min-height: 150rem;
+    margin: 50rem auto;
+    padding: 50rem; //50px;
+    // margin: 0px auto 30rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0, 0 6px 12px rgba($body-font-color, 0.1);
+    word-wrap: break-word;
+    background-color: $body-bg-color;
+
+    @media (max-width: 48.75rem) { //780px = 48.75 x 16
         width: 90%;
         padding: 25rem;// 25px;
     }
 }
 
+.briefcase {
+    display: none;
+    position: absolute;
+    top: 50rem;
+    left: 50%;
+    z-index: 0;
+    background-color: $body-font-color;
+    background-image: url($paperPattern);
+    background-repeat: repeat;
+    background-position: top left;
+    width: 80%;
+    max-width: 980rem;
+    height: calc(100% - 100rem);
+    min-height: 150rem;
+    margin-left: -490rem;
+    transform: rotate(-5deg);
+    border-radius: 5px;
+    box-shadow: 0 0 0 0, 0 6px 12px rgba($body-font-color, 0.1);
+
+    @media (min-width: 48rem) { //768px
+        display: block;
+    }
+
+    @media (max-width: 77.5rem) { //1240px
+        margin-left: -40%;
+    }
+}
+.row.main-content{
+    @media (max-width: 64rem) { //1024px
+        flex-direction: column-reverse;
+    }
+}
+
 .column {
+    text-align: left;
     &.column--left {
         position: relative;
-        text-align: right;
+
         &:after {
             position: absolute;
-            right: 0;
+            left: 0;
+            right: auto;
             top: 20rem;
             width: 1px;
             height: calc(100% - 40rem);
             background-color: rgba($border-color, 0.25);
             content: "";
         }
+        @media (min-width: 64rem) { //1024px
+            text-align: right;
+            &:after {
+                left: auto;
+                right: 0;
+            }
+        }
     }
     &.column--right {
-        text-align: left;
+
         &:after {
             position: absolute;
             left: 0;
@@ -77,4 +127,10 @@ main {
         text-transform: uppercase;
         margin-bottom: 15rem;
     }
+}
+
+.debug {
+    font-size: 10rem;
+    bottom: auto;
+    top: 20rem;
 }

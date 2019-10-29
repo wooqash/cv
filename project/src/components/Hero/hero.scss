@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-$avatarSize: 100rem;
+$avatarSize: 150rem;
 
 .hero {
     text-align: center;
@@ -22,8 +22,9 @@ $avatarSize: 100rem;
     &__avatar {
         width: $avatarSize;
         height: $avatarSize;
-        margin: $avatarSize / 5;
-        border: $avatarSize / 10 solid $border-color;
+        margin-top: $avatarSize / 5;
+        margin-bottom: $avatarSize / 5 + 10rem;
+        // border: $avatarSize / 10 solid $border-color;
         border-radius: $avatarSize;
     }
 }

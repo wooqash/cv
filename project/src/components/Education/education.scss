@@ -17,13 +17,20 @@ $dot-size: 9px;
             display: block;
             position: absolute;
             top: 50%;
-            right: -25px;
+            left: -25px;
+            right: auto;
             margin-top: floor(($dot-size / 2) * -1);
             width: $dot-size;
             height: $dot-size;
             border-radius: $dot-size;
             background-color: $border-color;
             content: "";
+        }
+        @media (min-width: 64rem) { //1024px
+            &:after {
+                left: auto;
+                right: -25px;
+            }
         }
     }
     &__date {
