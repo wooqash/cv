@@ -23,6 +23,7 @@
         "react-icons": "^3.7.0",
         "react-intl": "^2.8.0",
         "recompose": "^0.30.0",
+        "simple-json-fetch": "^1.0.1",
         "styled-components": "^4.4.0"
     },
     "keywords": [

@@ -5,6 +5,7 @@ module.exports = {
     googleFontsUrl: "https://fonts.googleapis.com/css?family=Hind:400,500,700|Open+Sans:400,700&display=swap&subset=latin-ext",
     authorName: 'Łukasz Sobola',
     authorPosition: 'Frontend developer',
+    githubUsername: 'wooqash',
     googleAnalyticsId: 'UA-000000000-1',
     dateOfBirth: "17-01-1984",
     contact: {

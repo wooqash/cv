@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.repositories {
+    margin: 40rem 0 0;
+    &__repo{
+        position: relative;
+        margin: 20rem 0;
+        &:after {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba($border-color, 0.25);
+            content: "";
+        }
+        &:last-child:after {
+            display: none;
+        }
+    }
+    &__repo-name {
+        text-transform: uppercase;
+    }
+    &__repo-date {
+        margin: 5rem 0;
+        font-size: 10rem;
+        color: $date-color;
+    }
+    &__repo-desc {
+        margin: 2rem 0;
+        font-size: 12rem;
+    }
+}
