@@ -23,7 +23,7 @@ $dot-size: 9px;
             width: $dot-size;
             height: $dot-size;
             border-radius: $dot-size;
-            background-color: $border-color;
+            background-color: $dot-color;
             content: "";
         }
         @media (min-width: 64rem) { //1024px
@@ -36,6 +36,7 @@ $dot-size: 9px;
     &__date {
         font-size: 13rem;
         margin-bottom: 5px;
+        color: $date-color;
     }
     &__field,
     &__spec {

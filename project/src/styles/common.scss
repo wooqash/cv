@@ -19,6 +19,7 @@ a {
     color: $body-links-color;
     &:hover {
         text-decoration: none;
+        color: $body-links-hover-color;
     }
 }
 
@@ -137,6 +138,10 @@ main {
         text-transform: uppercase;
         margin-bottom: 15rem;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 .debug {
