@@ -15,6 +15,8 @@ import About from "../components/About";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import Projects from "../components/Projects";
+import Clause from "../components/Clause";
 
 const IndexPage = (props) => {
     if (siteConfig.googleAnalyticsId === "UA-000000000-1") {
@@ -48,6 +50,12 @@ const IndexPage = (props) => {
                                 <Contact title={translations["contact.title"]}></Contact>
                             </Col>
                         </Row>
+                        <Row className="row repos">
+                            <Col>
+                                <Projects title={translations["project.title"]}></Projects>
+                            </Col>
+                        </Row>
+                        <Clause title={translations.clause}></Clause>
                     </Container>
                 </main>
                 <div className="briefcase"></div>
