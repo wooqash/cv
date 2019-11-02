@@ -1,7 +1,7 @@
 module.exports = [
     {
         locale: "cs",
-        label: "Čeština",
+        label: "PL",
         routes: {
             "/": "/"
         }
@@ -9,7 +9,7 @@ module.exports = [
     {
         default: true,
         locale: "en",
-        label: "English",
+        label: "EN",
         routes: {
             "/": "/"
         }
