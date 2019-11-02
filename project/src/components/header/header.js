@@ -2,10 +2,10 @@ import React from "react";
 
 import LanguageSwitcher from "../LanguageSwitcher";
 
-import "./Header.sass";
+import "./Header.scss";
 
 const Header = () => (
-    <header className="Header">
+    <header className="header">
         <nav>
             <LanguageSwitcher />
         </nav>

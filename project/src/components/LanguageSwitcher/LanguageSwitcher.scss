@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+.language-switcher {
+    position: absolute;
+    right: 0;
+    top: 22rem;
+    z-index: 1;
+    display: flex;
+    font-family: 'Hind', Verdana, Geneva, sans-serif;
+    font-size: 14rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    &__link {
+        margin: 0 5rem;
+        &:after {
+            content: "|";
+            margin-left: 5px;
+        }
+    }
+    &__active-lang {
+        display: inline-block;
+        vertical-align: middle;
+        color: $gainsboro;
+        background-color: $dot-color;
+        // background-image: url('../' + $paperPattern);
+        // background-repeat: repeat;
+        // background-position: top left;
+        padding: 10rem;
+        border-radius: 20rem;
+    }
+}
