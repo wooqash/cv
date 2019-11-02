@@ -8,7 +8,7 @@ import { languages, getLocalizedPath } from "../../i18n";
 
 import { PageContext } from "../../pageContext";
 
-import "./LanguageSwitcher.sass";
+import "./LanguageSwitcher.scss";
 
 const flags = {
     cs,
@@ -18,20 +18,17 @@ const flags = {
 const LanguageSwitcher = () => (
     <PageContext.Consumer>
         {({ originalPath, locale }) => (
-            <div className="LanguageSwitcher">
+            <div className="language-switcher">
                 {languages.map(lang =>
                     lang.locale === locale ? (
-                        <img
-                            key={lang.locale}
-                            src={flags[lang.locale]}
-                            alt={lang.label}
-                        />
+                        <span className="language-switcher__active-lang">{lang.label}</span>
                     ) : (
                         <Link
                             key={lang.locale}
                             to={getLocalizedPath(originalPath, lang.locale)}
+                            className="language-switcher__link"
                         >
-                            <img src={flags[lang.locale]} alt={lang.label} />
+                            {lang.label}
                         </Link>
                     )
                 )}
