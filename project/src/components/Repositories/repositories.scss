@@ -1,7 +1,10 @@
 @import '../../styles/variables.scss';
 
 .repositories {
-    margin: 40rem 0 0;
+    margin: 20rem 0 0;
+    .section__title {
+        text-align: center;
+    }
     &__repo{
         position: relative;
         margin: 20rem 0;

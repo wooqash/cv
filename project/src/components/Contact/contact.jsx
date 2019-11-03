@@ -34,7 +34,7 @@ const Contact = (props) => (
             }
             {siteConfig.contact.site2 &&
                 <li>
-                    <a className="contact-info__link site zibeline" href={siteConfig.contact.site2Link}>
+                    <a className="contact-info__link site zibeline" href={siteConfig.contact.site2Link} target="_blank"  rel="noopener noreferrer">
                         <FaGlobe className="contact-info__icon" size="16" />
                         {siteConfig.contact.site2}
                     </a>

@@ -22,8 +22,8 @@ $avatarSize: 150rem;
     &__avatar {
         width: $avatarSize;
         height: $avatarSize;
-        margin-top: $avatarSize / 5;
-        margin-bottom: $avatarSize / 5 + 10rem;
+        margin-top: $avatarSize / 15;
+        margin-bottom: $avatarSize / 15;
         // border: $avatarSize / 10 solid $border-color;
         border-radius: $avatarSize;
     }
