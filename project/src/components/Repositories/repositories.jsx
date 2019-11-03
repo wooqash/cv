@@ -41,7 +41,7 @@ class Repositories extends React.Component {
                                                 <p className="repositories__repo-desc">{repo.description}</p>
                                             </a>
                                             <span className="repositories__repo-date">
-                                                Updated: {new Date(repo.updated_at).toUTCString()}
+                                                {this.props.updated} {new Date(repo.updated_at).toLocaleString()}
                                             </span>
                                             <div className={"repositories__repo-star " + (repo.stargazers_count < 10 ? 'hidden' : '')}>
                                                 ★ {repo.stargazers_count}

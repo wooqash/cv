@@ -52,7 +52,7 @@ const IndexPage = (props) => {
                         </Row>
                         <Row className="row repos">
                             <Col>
-                                <Repositories title={translations["project.title"]}></Repositories>
+                                <Repositories title={translations["repo.title"]} updated={translations["repo.updated"]}></Repositories>
                             </Col>
                         </Row>
                         <Clause title={translations.clause}></Clause>
