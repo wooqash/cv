@@ -60,7 +60,7 @@ const IndexPage = (props) => {
                 </main>
                 <div className="briefcase"></div>
             </div>
-            <ScreenBadge className="debug"/>
+            {/* <ScreenBadge className="debug"/> */}
         </React.Fragment>
     );
 };

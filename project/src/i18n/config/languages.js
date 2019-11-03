@@ -1,6 +1,6 @@
 module.exports = [
     {
-        locale: "cs",
+        locale: "pl",
         label: "PL",
         routes: {
             "/": "/"

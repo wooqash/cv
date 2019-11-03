@@ -1,48 +1,49 @@
 {
-    "footer.title": "Built with Gatsby",
+    "footer.title": "Oparte na Gatsby",
     "experience": {
-        "title": "experience",
+        "title": "doświadczenie",
         "employments": [
             {
                 "company": "Prime Force",
-                "date": "02/2019 - currently",
+                "date": "02/2019 - obecnie",
                 "position": "Angular Developer",
-                "responsibilities": "I'm responsible for building a new and development of existing angular components at an internal document management system created for BMW company. Besides I'm also preparing End-To-End tests (E2E)."
+                "responsibilities": "Jestem odpowiedzialny za budowę nowych i rozwój istniejących komponentów angularowych do wewnętrzenego systemu zarządzania dokumentami stworzonego dla firmy BWM. Oprócz tego przygotowuję również testy End-To-End (E2E)."
+
             },
             {
                 "company": "Hypermedia/Isobar",
                 "date": "10-2012 - 02-2019",
                 "position": "Senior Frontend Developer",
-                "responsibilities": "I created and maintained responsive brand pages and contest purpose platforms. I was also involved in helping at the recruitment process and taking care of new people at the team."
+                "responsibilities": "Tworzyłem i utrzymywałem responsywne strony brandowe oraz platformy konkursowe. Byłem zaangażowany w pomoc przy rekrutacjach i wdrożenie nowych osób do zespołu."
             },
             {
                 "company": "Makolab",
                 "date": "10-2010 - 10-2012",
                 "position": "Junior Web Developer",
-                "responsibilities": "My main responsibilities were focused on making changes in existing webpage templates. I had to fix the bugs reported by our testers or clients. Sometimes I had to as well change or update the content on websites."
+                "responsibilities": "Moje głownym zdaniem było wprowadzanie zmian w szablonach do istniejących stron. Naprawiałem również błędy zgłoszone przez naszych testerów oraz klientów. Czasami także wprowadzałem i aktualizowałem treści na stronach."
             }
         ]
     },
     "education": {
-        "title": "education",
+        "title": "edukacja",
         "schools": [
             {
-                "name": "University of Lodz - Faculty of Management",
+                "name": "Uniwersytet Łódzki - Wydział Zarządzania",
                 "date": "2004 - 2009",
-                "field": "Management and Marketing",
-                "spec": "Information Technology in Management"
+                "field": "Zarządzanie i marketing",
+                "spec": "Informatyka w zarządzaniu"
             }
         ]
     },
     "about": {
-        "title": "job profile",
-        "desc": "From 2012 I working as front-end developer. During this period I was involved over a dozen or even more commercial projects. My main resposibility is creating a visual layer of websites based on graphic projects. At this moment I'm focused on improving my JavaScript skills and I'm interested in this type of projects."
+        "title": "profil zawodowy",
+        "desc": "Od 2012 roku pracuje jako frontend developer. W trakcie tego okresu byłem zaangażowany w kilkanaście a może i więcej projektów komercyjnych. Moją główną odpowiedzialnością jest tworznie warstwy prezentacyjnej stron internetowych na bazie projektów graficznych. Obecnie jestem skupiony na podnoszeniu moich kwalifikacji z zakresu JavaScript'u i jestem zaintersowany głównie tego typu projektami."
     },
     "skills": {
-        "title": "skills",
+        "title": "umiejętności",
         "skills": [
             {
-                "name": "technologies",
+                "name": "technologie",
                 "items": [
                     {
                         "name": "html5",
@@ -87,7 +88,7 @@
                 ]
             },
             {
-                "name": "libs & frameworks",
+                "name": "biblioteki i frameworki",
                 "items": [
                     {
                         "name": "angular",
@@ -116,7 +117,7 @@
                 ]
             },
             {
-                "name": "tools",
+                "name": "narzędzia",
                 "items": [
                     {
                         "name": "vscode",
@@ -165,7 +166,7 @@
                 ]
             },
             {
-                "name": "other",
+                "name": "inne",
                 "items": [
                     {
                         "name": "rwd",
@@ -183,7 +184,7 @@
             }
         ]
     },
-    "contact.title": "contact",
-    "project.title": "Latest repositories from my Github",
-    "clause": "I hereby agree to the processing of personal data included in my application for the purposes of any future recruitment processes in accordance with art. 6 par. 1 lit. a Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation)."
+    "contact.title": "kontakt",
+    "project.title": "Ostatnie repozytoria z mojego Githuba",
+    "clause": "Wyrażam zgodę na przetwarzanie danych osobowych zawartych w niniejszym dokumencie do realizacji procesu rekrutacji zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy  95/46/WE (RODO)."
 }

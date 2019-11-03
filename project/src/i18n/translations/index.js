@@ -1,4 +1,4 @@
 import en from './en.json';
-import cs from './cs.json';
+import pl from './pl.json';
 
-export default { cs, en };
+export default { pl, en };

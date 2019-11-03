@@ -2,8 +2,8 @@
 
 .language-switcher {
     position: absolute;
-    right: 0;
-    top: 22rem;
+    right: 7rem;
+    top: 7rem;
     z-index: 1;
     display: flex;
     font-family: 'Hind', Verdana, Geneva, sans-serif;
@@ -16,16 +16,23 @@
             content: "|";
             margin-left: 5px;
         }
+        &:last-child:before {
+            content: "|";
+            margin-right: 5px;
+        }
+        &:first-child:before,
+        &:last-child:after {
+            display: none;
+        }
     }
     &__active-lang {
         display: inline-block;
         vertical-align: middle;
         color: $gainsboro;
         background-color: $dot-color;
-        // background-image: url('../' + $paperPattern);
-        // background-repeat: repeat;
-        // background-position: top left;
-        padding: 10rem;
+        padding: 11rem;
         border-radius: 20rem;
+        width: 40rem;
+        text-align: center;
     }
 }
