@@ -15,7 +15,7 @@ import About from "../components/About";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
-import Projects from "../components/Projects";
+import Repositories from "../components/Repositories";
 import Clause from "../components/Clause";
 
 const IndexPage = (props) => {
@@ -52,7 +52,7 @@ const IndexPage = (props) => {
                         </Row>
                         <Row className="row repos">
                             <Col>
-                                <Projects title={translations["project.title"]}></Projects>
+                                <Repositories title={translations["project.title"]}></Repositories>
                             </Col>
                         </Row>
                         <Clause title={translations.clause}></Clause>

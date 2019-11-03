@@ -42,7 +42,7 @@ const Contact = (props) => (
             }
             {siteConfig.contact.address &&
                 <li>
-                    <a className="contact-info__link address" href={siteConfig.contact.addressLink} target="_blank">
+                    <a className="contact-info__link address" href={siteConfig.contact.addressLink} target="_blank"  rel="noopener noreferrer">
                         <FaMapMarkerAlt className="contact-info__icon" size="16" />
                         {siteConfig.contact.address}
                     </a>

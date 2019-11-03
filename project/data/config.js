@@ -1,7 +1,7 @@
 module.exports = {
-    siteTitle: 'Hi! I\'m Francisco!',
-    siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-    keywords: ['gatsbyjs', 'react', 'curriculum'],
+    siteTitle: 'Hi! I\'m Łukasz!',
+    siteDescription: `My own online curriculum built with Gatsby just for the training`,
+    keywords: ['gatsbyjs', 'react', 'curriculum', 'cv', ],
     googleFontsUrl: "https://fonts.googleapis.com/css?family=Hind:400,500,700|Open+Sans:400,700&display=swap&subset=latin-ext",
     authorName: 'Łukasz Sobola',
     authorPosition: 'Frontend developer',

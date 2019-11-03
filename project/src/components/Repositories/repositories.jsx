@@ -4,12 +4,12 @@ import siteConfig from "../../../data/config";
 
 import Loader from '../loader'
 
-import "./projects.scss";
+import "./repositories.scss";
 
 const endpoint =
     `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
 
-class Projects extends React.Component {
+class Repositories extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -57,4 +57,4 @@ class Projects extends React.Component {
     }
 }
 
-export default Projects;
+export default Repositories;
