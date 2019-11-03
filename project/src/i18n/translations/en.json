@@ -1,7 +1,7 @@
 {
     "home.title": "Homepage",
     "home.main": "home",
-    "footer.title": "© 2019, Built with Gatsby",
+    "footer.title": "Built with Gatsby",
     "experience": {
         "title": "experience",
         "employments": [
@@ -9,19 +9,19 @@
                 "company": "Prime Force",
                 "date": "02/2019 - currently",
                 "position": "Angular Developer",
-                "responsibilities": "I'm responsible for building and development of existing angular components at an internal BMW system for document management. Besides I'm also preparing End-To-End tests (E2E)"
+                "responsibilities": "I'm responsible for building and development of existing angular components at an internal BMW system for document management. Besides I'm also preparing End-To-End tests (E2E)."
             },
             {
                 "company": "Hypermedia/Isobar",
                 "date": "10-2012 - 02-2019",
                 "position": "Senior Frontend Developer",
-                "responsibilities": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lacus in ligula tempus rhoncus non sed metus. Morbi nisi quam, finibus et mauris id, porttitor faucibus orci. Donec ac elementum est. Cras tempus ultricies nibh, eget elementum dui porta ut. Cras eu magna leo. Donec in nunc ac ante tincidunt ultrices a vel sem. Nulla fermentum dui vel nulla commodo bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam consequat non nibh at faucibus. Nulla suscipit pulvinar neque quis volutpat."
+                "responsibilities": "I created and maintained responsive brand pages and contest purpose platforms. I was also involved in helping at the recruitment process and taking care of new people at the team."
             },
             {
                 "company": "Makolab",
                 "date": "10-2010 - 10-2012",
-                "position": "Senior Frontend Developer",
-                "responsibilities": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lacus in ligula tempus rhoncus non sed metus. Morbi nisi quam, finibus et mauris id, porttitor faucibus orci. Donec ac elementum est. Cras tempus ultricies nibh, eget elementum dui porta ut. Cras eu magna leo."
+                "position": "Junior Web Developer",
+                "responsibilities": "My main responsibilities were focused on making changes in existing webpage templates. I had to fix the bugs reported by our testers or clients. Sometimes I had to as well change the content on websites."
             }
         ]
     },
