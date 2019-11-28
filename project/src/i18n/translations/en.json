@@ -6,8 +6,8 @@
             {
                 "company": "Prime Force",
                 "date": "02/2019 - currently",
-                "position": "Angular Developer",
-                "responsibilities": "I'm responsible for building a new and development of existing angular components at an internal document management system created for BMW company. Besides I'm also preparing End-To-End tests (E2E)."
+                "position": "Junior Angular Developer",
+                "responsibilities": "I am responsible for building new and developing existing angular components for an internal document management of BMW company. My tasks are also prepartion of End-To-End tests (E2E)."
             },
             {
                 "company": "Hypermedia/Isobar",
@@ -19,7 +19,7 @@
                 "company": "Makolab",
                 "date": "10-2010 - 10-2012",
                 "position": "Junior Web Developer",
-                "responsibilities": "My main responsibilities were focused on making changes in existing webpage templates. I had to fix the bugs reported by our testers or clients. Sometimes I had to as well change or update the content on websites."
+                "responsibilities": "My main responsibilities were focused on making modification in existing webpage templates. I also had to fix the bugs reported by our testers or clients. Sometimes I did as well websites content updates."
             }
         ]
     },
@@ -36,7 +36,7 @@
     },
     "about": {
         "title": "job profile",
-        "desc": "From 2012 I working as front-end developer. During this period I was involved over a dozen or even more commercial projects. My main resposibility is creating a visual layer of websites based on graphic projects. At this moment I'm focused on improving my JavaScript skills and I'm interested in this type of projects."
+        "desc": "From 2012 I'm working as front-end developer. During this period I was involved in over a dozen or even more commercial projects. My main resposibility is creating a visual layer of websites based on graphic projects. At this moment I'm focused on improving my JavaScript skills and I'm interested in this type of projects."
     },
     "skills": {
         "title": "skills",
