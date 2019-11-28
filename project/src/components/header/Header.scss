@@ -14,5 +14,9 @@
             vertical-align: middle;
         }
     }
+    @media print {
+        display: none;
+    }
 }
+
 

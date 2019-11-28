@@ -24,12 +24,16 @@ $avatarSize: 150rem;
         height: $avatarSize;
         margin-top: $avatarSize / 15;
         margin-bottom: $avatarSize / 15;
-        // border: $avatarSize / 10 solid $border-color;
         border-radius: $avatarSize;
     }
     @media (max-width: 32.5rem) { //520px = 32.5 x 16
         &__title {
             padding: 3%;
+        }
+    }
+    @media print {
+        &__title {
+            margin-top: 0;
         }
     }
 }

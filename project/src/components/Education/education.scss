@@ -13,11 +13,12 @@ $dot-size: 9px;
         margin-top: 5rem;
         margin-bottom: 10rem;
         letter-spacing: 1rem;
+        color: $section-subtitle-color;
         &:after {
             display: block;
             position: absolute;
             top: 50%;
-            left: -25px;
+            left: -19px;
             right: auto;
             margin-top: floor(($dot-size / 2) * -1);
             width: $dot-size;
@@ -26,7 +27,14 @@ $dot-size: 9px;
             background-color: $dot-color;
             content: "";
         }
-        @media (min-width: 64rem) { //1024px
+        @media screen and (min-width: 64rem) { //1024px
+            &:after {
+                left: auto;
+                right: -25px;
+            }
+        }
+
+        @media print {
             &:after {
                 left: auto;
                 right: -25px;

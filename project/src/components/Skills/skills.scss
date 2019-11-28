@@ -5,6 +5,7 @@
         margin-bottom: 5rem;
         font-size: 14rem;
         text-transform: uppercase;
+        color: $section-subtitle-color;
     }
     &-list {
         margin-bottom: 15rem;
@@ -15,6 +16,7 @@
             &--marked {
                 font-weight: 700;
                 font-size: 16rem;
+                color: $marked-word-color;
             }
         }
     }

@@ -1,5 +1,8 @@
 footer {
     margin:  20rem auto;
     text-align: center;
-    font-size: 11rem
+    font-size: 11rem;
+    @media print {
+        display: none;
+    }
 }
