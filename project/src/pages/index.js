@@ -3,7 +3,7 @@ import { injectIntl, intlShape } from "react-intl";
 import { compose } from "recompose";
 import siteConfig from "../../data/config";
 
-import { Container, Row, Col, ScreenBadge } from "react-awesome-styled-grid";
+import { Container, Row, Col } from "react-awesome-styled-grid";
 
 import withPageContext from "../pageContext";
 import withLayout from "../layout";
