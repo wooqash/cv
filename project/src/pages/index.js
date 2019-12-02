@@ -17,6 +17,7 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Repositories from "../components/Repositories";
 import Clause from "../components/Clause";
+import PdfButton from "../components/PdfButton";
 
 const IndexPage = (props) => {
     if (siteConfig.googleAnalyticsId === "UA-000000000-1") {
@@ -59,6 +60,7 @@ const IndexPage = (props) => {
                     </Container>
                 </main>
                 <div className="briefcase"></div>
+                <PdfButton name={translations["pdf.name"]} lang={locale}></PdfButton>
             </div>
             {/* <ScreenBadge className="debug"/> */}
         </React.Fragment>

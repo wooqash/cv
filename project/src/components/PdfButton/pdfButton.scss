@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.pdf-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10rem 25rem;
+    color: $button-text-color;
+    background-color: $button-bg-color;
+    border-radius: 5rem;
+    font-family: 'Hind', Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    font-size: 13rem;
+    text-transform: uppercase;
+    line-height: 1;
+    visibility: hidden;
+    opacity:0;
+    transition: visibility 0.5s linear,opacity 0.5s linear;
+    &:hover {
+        background-color: $button-bg-hover-color;
+        color: $button-text-color;
+    }
+    &.show{
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 0.5s linear,opacity 0.5s linear;
+    }
+}

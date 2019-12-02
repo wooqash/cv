@@ -1,6 +1,6 @@
 @import "colors.scss";
 
-$paperPattern: '../images/paper.png';
+$paperPattern: '../assets/images/paper.png';
 
 $body-font-color: $eerie-black;
 $body-bg-color: $white;
@@ -10,6 +10,10 @@ $border-color: $dark-slate-gray;
 $section-title-color: $dark-slate-gray;
 $section-subtitle-color: $dark-slate-gray;
 $marked-word-color: $dark-slate-gray;
+
+$button-bg-color: $dark-slate-gray;
+$button-text-color: $gainsboro;
+$button-bg-hover-color: $arsenic;
 
 $address-color: $vermilion;
 $phone-color: $vivid-cerulean;

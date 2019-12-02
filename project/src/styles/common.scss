@@ -31,19 +31,24 @@ a {
 main {
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 100%;
+    padding: 50rem 20rem;
     max-width: 980rem;
     min-height: 150rem;
     margin: 50rem auto;
-    padding: 50rem; //50px;
     border-radius: 5px;
     box-shadow: 0 0 0 0, 0 6px 12px rgba($body-font-color, 0.1);
     word-wrap: break-word;
     background-color: $body-bg-color;
 
-    @media (max-width: 48.75rem) { //780px = 48.75 x 16
+    @media (min-width: 48rem) { //780px = 48.75 x 16
         width: 90%;
-        padding: 25rem;// 25px;
+        padding: 50rem 25rem;// 25px;
+    }
+
+    @media (min-width: 64rem) { //780px = 48.75 x 16
+        width: 80%;
+        padding: 50rem;// 25px;
     }
 
     @media print {

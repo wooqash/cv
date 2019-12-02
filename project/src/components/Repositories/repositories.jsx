@@ -6,7 +6,7 @@ import Loader from '../loader'
 
 import "./repositories.scss";
 
-const endpoint =
+const reposEndpoint =
     `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=pushed&per_page=5&page=1`;
 
 class Repositories extends React.Component {
@@ -18,13 +18,13 @@ class Repositories extends React.Component {
         }
     }
     async componentDidMount() {
-        const repos = await jsonFetch(endpoint);
+        const repos = await jsonFetch(reposEndpoint);
         if (repos.json && repos.json.length) {
             this.setState({ repos: repos.json, status: 'ready' })
         }
     }
     render() {
-        const { status } = this.state
+        const { status } = this.state;
         return (
             <section className="section repositories">
                 <h3 className="section__title">{this.props.title}</h3>
@@ -50,6 +50,7 @@ class Repositories extends React.Component {
                                             </li>
                                         </React.Fragment>)
                                     }
+                                    return '';
                                 })}
                             </ul>
                         </React.Fragment>
