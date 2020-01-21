@@ -4,6 +4,8 @@
     "version": "0.0.1",
     "author": "Marek Janča <marek-janca@volny.cz>",
     "dependencies": {
+        "@hot-loader/react-dom": "^16.8.6",
+        "core-js": "^3.6.4",
         "gatsby": "^2.4.2",
         "gatsby-image": "^2.0.41",
         "gatsby-plugin-google-analytics": "2.0.19",
@@ -25,8 +27,7 @@
         "recompose": "^0.30.0",
         "sharp": "^0.23.3",
         "simple-json-fetch": "^1.0.1",
-        "styled-components": "^4.4.0",
-        "@hot-loader/react-dom": "^16.8.6"
+        "styled-components": "^4.4.0"
     },
     "keywords": [
         "gatsby",
